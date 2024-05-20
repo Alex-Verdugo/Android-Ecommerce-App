@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/textView_leaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="25dp"
+        android:background="#050505"
+        android:text="@string/leaving_the_agency"
+        android:textColor="#055DB5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_Delete_User"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AdminButton" />
+
+
+    <TextView
+        android:id="@+id/textView_appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="38dp"
+        android:background="#050505"
+        android:text="@string/store_name"
+        android:textColor="#055DB5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:text="Main Menu"
+        android:textAlignment="center"
+        android:textColor="#055DB5"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/View_items_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_appName" />
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView5"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="65dp"-->
+    <!--        android:text="App Stuff will go here !"-->
+    <!--        android:textAlignment="center"-->
+    <!--        android:textColor="#055DB5"-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView4" />-->
+
+    <Button
+        android:id="@+id/AdminButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="111dp"
+        android:layout_marginBottom="24dp"
+        android:text="Admin Only "
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/textView_leaving"
+        app:layout_constraintStart_toStartOf="@+id/textView_leaving"
+        app:layout_constraintTop_toBottomOf="@+id/button_order_history"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button_Delete_User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="40dp"
+        android:text="Delete User"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_leaving" />
+
+    <Button
+        android:id="@+id/View_items_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="View Items"
+        app:layout_constraintBottom_toTopOf="@+id/button_order_history"
+        app:layout_constraintEnd_toEndOf="@+id/button_order_history"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button_order_history"
+        android:layout_width="148dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="130dp"
+        android:text="View Orders"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/AdminButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/View_items_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

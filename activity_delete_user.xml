@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/Modifyitem_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:layout_marginBottom="92dp"
+        android:text="@string/confirm_info_to_delete_user"
+        android:textColor="#055DB5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ItemName_editText_DeleteItemActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Modify_item_button_DeletItemActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="178dp"
+        android:shadowColor="#D8D2D2"
+        android:text="@string/delete_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword_DA"
+        app:strokeColor="#055DB5" />
+
+    <EditText
+        android:id="@+id/editTextPassword_DA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#BFBFBF"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#055DB5"
+        android:textColorHint="#055DB5"
+        app:layout_constraintBottom_toTopOf="@+id/Modify_item_button_DeletItemActivity"
+        app:layout_constraintStart_toStartOf="@+id/ItemName_editText_DeleteItemActivity"
+        app:layout_constraintTop_toBottomOf="@+id/ItemName_editText_DeleteItemActivity" />
+
+    <EditText
+        android:id="@+id/ItemName_editText_DeleteItemActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#BFBFBF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#055DB5"
+        android:textColorHint="#055DB5"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword_DA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Modifyitem_tittle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".ModifyItemActivity">
+
+
+    <TextView
+        android:id="@+id/Modifyitem_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="133dp"
+        android:layout_marginBottom="45dp"
+        android:text="Enter Data to be Changed"
+        android:textColor="#055DB5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ItemName_editText_DeleteItemActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Modify_item_button_DeletItemActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="126dp"
+        android:shadowColor="#D8D2D2"
+        android:text="Modify Item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iteprice_editText_Modifyactivity"
+        app:strokeColor="#055DB5" />
+
+    <EditText
+        android:id="@+id/ItemName_editText_DeleteItemActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="#BFBFBF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Item Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#055DB5"
+        android:textColorHint="#055DB5"
+        app:layout_constraintBottom_toTopOf="@+id/itemAmount_editText_Modifyactivity2"
+        app:layout_constraintStart_toStartOf="@+id/Modifyitem_tittle"
+        app:layout_constraintTop_toBottomOf="@+id/Modifyitem_tittle" />
+
+    <EditText
+        android:id="@+id/iteprice_editText_Modifyactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#BFBFBF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Item Price"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#055DB5"
+        android:textColorHint="#055DB5"
+        app:layout_constraintBottom_toTopOf="@+id/Modify_item_button_DeletItemActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemAmount_editText_Modifyactivity2" />
+
+    <EditText
+        android:id="@+id/itemAmount_editText_Modifyactivity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="41dp"
+        android:backgroundTint="#BFBFBF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Item Amount"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#055DB5"
+        android:textColorHint="#055DB5"
+        app:layout_constraintBottom_toTopOf="@+id/iteprice_editText_Modifyactivity"
+        app:layout_constraintEnd_toEndOf="@+id/iteprice_editText_Modifyactivity"
+        app:layout_constraintTop_toBottomOf="@+id/ItemName_editText_DeleteItemActivity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

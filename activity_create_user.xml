@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050505"
+    tools:context=".LoginActivity">
+
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/textView_all_users"-->
+    <!--        android:layout_width="328dp"-->
+    <!--        android:layout_height="138dp"-->
+    <!--        android:layout_marginStart="32dp"-->
+    <!--        android:layout_marginEnd="33dp"-->
+    <!--        android:layout_marginBottom="32dp"-->
+    <!--        android:text="All Users:"-->
+    <!--        android:textColor="#E8DBDB"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/textView2_LoginPg_Login"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/textView2_LoginPg_Login"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView_appName" />-->
+
+    <TextView
+        android:id="@+id/Modifyitem_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="90dp"
+        android:text="@string/enter_your_new_user_information_here"
+        android:textColor="#055DB5"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/ItemName_editText_DeleteItemActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/Create_Account_Button_CreateActivity"
+        android:layout_width="346dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="278dp"
+        android:shadowColor="#D8D2D2"
+        android:text="@string/create_account"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword_DA"
+        app:strokeColor="#055DB5" />
+
+    <EditText
+        android:id="@+id/editTextPassword_DA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#BFBFBF"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#055DB5"
+        android:textColorHint="#055DB5"
+        app:layout_constraintBottom_toTopOf="@+id/Create_Account_Button_CreateActivity"
+        app:layout_constraintStart_toStartOf="@+id/ItemName_editText_DeleteItemActivity"
+        app:layout_constraintTop_toBottomOf="@+id/ItemName_editText_DeleteItemActivity" />
+
+    <EditText
+        android:id="@+id/ItemName_editText_DeleteItemActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:backgroundTint="#BFBFBF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Username"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#055DB5"
+        android:textColorHint="#055DB5"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword_DA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Modifyitem_tittle" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
